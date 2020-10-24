@@ -4,7 +4,6 @@ function init() {
     d = new Date();
     h = d.getHours();
     m = d.getMinutes();
-    s = d.getSeconds();
     clock();
 };
 
@@ -17,7 +16,6 @@ function clock() {
             h = 0;
         }
     }
-    $('sec', s);
     $('min', m);
     $('hr', h);
     animate = setTimeout(clock, 1000);
